@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Register Form</title>
+        <style>
+        body{
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: rgb(99, 93, 93);
+        }
+
+        .container {
+         height: 50%;
+         width: 50%;
+        margin-left: 20%;
+        padding: 50px;
+        background-color: lightseagreen;
+        color: white;
+        }
+
+        input[type=text], input[type=password], textarea {
+         width: 50%;
+        padding: 15px;
+        margin: 5px 0 22px 0;
+        border-radius: 10px;
+        border-color: rgb(89, 89, 175);
+        background:rgb(248, 246, 246);
+        }
+
+        input[type=text]:focus, input[type=password]:focus {
+        background-color: white;
+        outline: none;
+        }
+
+         div {
+         padding: 10px 0;
+         }
+
+        hr {
+        border: 1px solid black;
+        margin-bottom: 25px;
+        }
+
+        .registerbtn {
+        background-color: blue;
+        color: white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 25%;
+        opacity: 0.9;
+        border-radius: 10px;
+        text-align: center;
+        margin-top: 8%;
+        }
+
+        .registerbtn:hover {
+        opacity: 1;
+        background-color: limegreen;
+        }
+
+        .contact{
+            border-radius: 1%;
+            border-style: solid;
+            border-width: 5px;
+            border-color: whitesmoke;
+            margin-top: 5%;
+            background-color: lightblue;
+            color: black;
+        }
+        </style>
+    </head>
+
+        <body>
+            <form>
+                <div class="container">
+                    <center><h1>Employee Registeration Form</h1></center><hr>
+                    <legend><h3><u>Person Details.!</u></h3></legend>
+                    <label> <h4>Firstname :</h4> </label> 
+                    <input type="text" name="firstname" placeholder= "Firstname" size="15" required />  
+                    <label> <h4>Lastname:</h4> </label>  
+                    <input type="text" name="lastname" placeholder="Lastname" size="15"required /> 
+                    <label><h4> Date Of Birth:</h4> </label> 
+                    <input type = "date">
+                    <div>
+                        <label> <h4>Gender :</h4></label>
+                        <input type="radio" value="Male" name="gender" checked > Male 
+                        <input type="radio" value="Female" name="gender"> Female 
+                        <input type="radio" value="Other" name="gender"> Other
+                    </div>
+                    <label><h4>Upload Resume:</h4></label><input type="file">
+                    <div class="contact">
+                        <legend style="margin-left: 5%;"><h3><u>Contact Details.!</u></h3></legend>
+                        <center>
+                        <label for="email" style="margin-right: 5%;"><b>Email</b>
+                            <input type="text" placeholder="Enter Email" name="email" required/>
+                        </label><br>
+                        <label for="psw" style="margin-right: 9%;"><b>Password</b>  
+                            <input type="password" placeholder="Enter Password" name="psw" required/>
+                        </label><br>
+                        <label for="psw-repeat" style="margin-right: 17%;"><b>Re-type Password</b>
+                            <input type="password" placeholder="Retype Password" name="psw-repeat" required/>
+                        </label><br>
+                        <label style="margin-right: 6%;"><b>Phone</b>
+                            <input type="text" name="country code" placeholder="Country Code"  value="+91" size="2"/>
+                        </label><br>
+                        <label  style="margin-right: 65%;"><b>Address :</b></label>
+                            <textarea cols="80" rows="5" placeholder="Current Address" value="address" required></textarea>
+                        </center>
+                    </div> 
+                    <center><button type="submit" class="registerbtn" onclick="massage">Register</button></center>
+                </div>    
+            </form>
+            
+            <script>
+                function massage() {
+                    alert("Successfully Registered!");
+                }
+            </script>
+
+        </body>  
+</html>  
